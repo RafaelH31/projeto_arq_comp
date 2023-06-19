@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Iron Maiden';
+  src: url('maiden.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #27282c;
+  
+}
+
+.header {
+  height: 100px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 99;
+  border-bottom: 2px solid black;
+
+}
+
+.logo {
+  display: inline-block;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Iron Maiden'!important;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+a {
+  display: inline-block;
+  position: relative;
+  background: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  /*10 px no topo e base, 30 px no lado direito e esquerdo*/
+  transition: 0.5s;
+
+  padding: 15px;
+  border-radius: 2px;
+  color: #FFCC00;
+  margin-left: 10px;
+
+  font-size: 15px;
+}
+
+a:hover {
+  letter-spacing: 0.18em;
+  /*em = tamanho adaptativo de acordo com o tamanho da tela*/
+  background: var(--anima);
+  /*"--" serve para chamar variaveis*/
+  color: var(--anima);
+  box-shadow: 0 0 35px var(--anima);
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  /*2px em todas a direções a posição do elemento*/
+  background: #27282c;
+}
+
+a span {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chart-container {
+  margin: 10px;
+}
+
+.chart {
+  margin-top: 10px;
+  width: 700px;
+  height: 350px;
+  border: 3px ridge #FFCC00;
+}
+.chart-containerBola {
+  margin: 10px;
+}
+.chartBola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 700px;
+  height: 350px;
+  border: 3px ridge #FFCC00;
+}
+
+.container2 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.footer {
+  border-top: 2px solid black;
+  height: 65px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer h4 {
+  margin: 0;
+}
+
+.footer .container2 {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer .container2 .version {
+  font-size: 12px;
+  font-weight: 800;
+}

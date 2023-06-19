@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Iron Maiden';
+    src: url('maiden.ttf');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #27282c;
+}
+
+.header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 2px solid black;
+    z-index: 99;
+}
+
+.logo {
+    display: inline-block;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Iron Maiden'!important;
+}
+
+
+a {
+    display: inline-block;
+    position: relative;
+    background: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    /*10 px no topo e base, 30 px no lado direito e esquerdo*/
+    transition: 0.5s;
+
+    padding: 15px;
+    border-radius: 2px;
+    color: #FFCC00;
+    margin-left: 10px;
+
+    font-size: 15px;
+}
+
+a:hover {
+    letter-spacing: 0.18em;
+    /*em = tamanho adaptativo de acordo com o tamanho da tela*/
+    background: var(--anima);
+    /*"--" serve para chamar variaveis*/
+    color: var(--anima);
+    box-shadow: 0 0 35px var(--anima);
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    /*2px em todas a direções a posição do elemento*/
+    background: #27282c;
+}
+
+a span {
+    position: relative;
+}
+
+#containerAlerta {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 730px;
+    height: 400px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-top: 2px solid black;
+    box-shadow: 5px 10px 18px whitesmoke;
+    border-radius: 5%;
+    background-color: rgba(128, 128, 128, 0.9); /* Cor de fundo acinzentado e 50% de opacidade */
+    border: 2px solid black; /* Borda preta de 2 pixels */
+}
+
+#tituloAlbum{
+    color: red;
+    font-size: 55px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+}
+#containerAlerta h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #FFCC00;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+/* 
+<h1 id="tituloAlbum"></h1><br>
+      <h2 id="Data-de-lancamento">Data de lançamento: <span id="DataTexo"></span></h2><br>
+      <h2 id="Numero-de-musicas">Número de músicas: <span id="NumeroTexto"></span></h2><br>
+      <h2 id="Duracao-total">Duração total: <span id="DuracaoTexto"></span></h2><br>
+      <h2 id="Gravadora">Gravadora: <span id="GravadoraTexto"></span></h2><br>
+      <h2 id="DiscosVendidos">Discos Vendidos: <span id="DiscosTexto"></span></h2> */
+#voltar {
+    color: red;
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 50px auto;
+    border: none;
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 5%;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#voltar:hover {
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+#music-player {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #333;
+    border-radius: 5%;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #controls button {
+    color: red;
+    background-color: #27282c;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  #barra-volume {
+    width: 100px;
+  }
+  
+  #duracao {
+    color: #FFCC00;
+    margin-left: 10px;
+  }
+  .container2 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.footer {
+    border-top: 2px solid black;
+    height: 65px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer h4 {
+    margin: 0;
+}
+
+.footer .container2 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer .container2 .version {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.container {
+    width: 100%;
+    height: 170vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-item {
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.container-item:hover img {
+    filter: brightness(70%);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-item:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-button {
+    color: red;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.overlay-button:hover {
+    color: #FFCC00;
+    cursor: pointer;
+}
+.botoes {
+    display: flex;
+    flex-direction: column;
+}

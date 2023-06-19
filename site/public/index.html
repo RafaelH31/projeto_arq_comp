@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRON MAIDEN</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="#home" class="botao-home"><span>IRON MAIDEN</span></a>
+    </div>
+    <div class="buttons">
+      <a href="#historia" style="--anima:#1e9bff"><span>história</span></a>
+      <a href="#membros" style="--anima:#00F519"><span>Membros</span></a>
+      <a href="login.html" style="--anima:#ff0000"><span>Login</span></a>
+    </div>
+  </header>
+  <section id="home">
+    <div class="container buttons">
+      <img src="img/albuns.jpeg" alt="">
+      <div class="texto">
+        <h1>Sobre a Banda:</h1>
+        <p>O Iron Maiden é uma das bandas mais influentes e icônicas do heavy metal, com uma carreira que já
+          dura mais de quatro décadas. Formada em 1975, em Londres, Inglaterra, a banda é conhecida por suas
+          letras épicas e melodias poderosas, que misturam elementos de rock progressivo e heavy metal.
+          O Iron Maiden já lançou mais de 15 álbuns de estúdio, além de vários álbuns ao vivo e coletâneas.
+          Entre seus álbuns mais famosos estão "The Number of the Beast", "Powerslave" e "Seventh Son of a
+          Seventh Son". A banda também é famosa por suas performances ao vivo impressionantes, com shows
+          cheios de energia, pirotecnia e um enorme e icônico mascote chamado "Eddie".
+          Além de sua qualidade musical, o Iron Maiden também é conhecido por suas letras que exploram temas
+          como história,
+          mitologia, ficção científica e terror.</p>
+          <h2>Crie uma conta para acessar os álbuns <br>e estatisticas do Iron Maiden e do site! <a href="cadastro.html" style="--anima:#ff0000"><span>Cadastro</span></a></h2>
+          
+      </div>
+    </div>
+  </section>
+  <section id="historia">
+    <div class="container2">
+      <img class="img-fundo" src="img/fundo.png" alt="">
+      <div class="historia">
+        <div class="slides">
+          <input onclick="alterar()" type="radio" name="slide" id="slide1" checked>
+          <input onclick="alterar()" type="radio" name="slide" id="slide2">
+          <input onclick="alterar()" type="radio" name="slide" id="slide3">
+          <input onclick="alterar()" type="radio" name="slide" id="slide4">
+          <input onclick="alterar()" type="radio" name="slide" id="slide5">
+          <input onclick="alterar()" type="radio" name="slide" id="slide6">
+
+          <div class="slide s1"><img src="img/anos70.jpg" alt="foto dos anos 70"></div>
+          <div class="slide"><img src="img/anos80.jpg" alt="foto dos anos 80"></div>
+          <div class="slide"><img src="img/anos90.jpg" alt="foto dos anos 90"></div>
+          <div class="slide"><img src="img/anos2000s.jpg" alt="foto dos anos 2000"></div>
+          <div class="slide"><img src="img/anos2010.jpg" alt="foto dos anos 2010"></div>
+          <div class="slide"><img src="img/anos2020.jpg" alt="foto dos anos 2020"></div>
+        </div>
+      </div>
+      <div class="navegacao">
+        <label class="barra" for="slide1">1970</label>
+        <label class="barra" for="slide2">1980</label>
+        <label class="barra" for="slide3">1990</label>
+        <label class="barra" for="slide4">2000</label>
+        <label class="barra" for="slide5">2010</label>
+        <label class="barra" for="slide6">2020</label>
+      </div>
+      <div class="texto-historia" id="texto">
+        <h1 id="titulo">Década de 70</h1>
+        <p id="paragrafo">O Iron Maiden foi formado em 25 de dezembro de 1975, quando o baixista Steve Harris deixou sua
+          banda anterior. Ele decidiu criar sua própria banda depois que suas composições foram rejeitadas por outras
+          bandas. O nome "Iron Maiden" foi inspirado em um instrumento de tortura. A primeira apresentação da banda
+          aconteceu em maio de 1976, e eles tocaram principalmente no Cart and Horses Pub, em Londres. A formação
+          original da banda teve várias mudanças, com diferentes vocalistas e guitarristas entrando e saindo. A formação
+          mais estável incluiu Steve Harris, Dave Murray, Paul Di'Anno, Clive Burr e Adrian Smith.
+          Eles passaram por dificuldades no início, mas eventualmente encontraram sucesso após o lançamento de seu álbum
+          de estreia chamado "Iron Maiden" em 1980.</p>
+      </div>
+    </div>
+  </section>
+  <section id="membros">
+      <div class="member-container">
+        <div class="member-info">
+          <h1>Selecione um membro da banda</h1>
+          <select id="select_album">
+            <option value="1">Bruce Dickinson</option>
+            <option value="2">Paul Di'Anno</option>
+            <option value="3">Blaze Bayley</option>
+            <option value="4">Steve Harris</option>
+            <option value="5">Dave Murray</option>
+            <option value="6">Adrian Smith</option>
+            <option value="7">Janick Gers</option>
+            <option value="8">Dennis Stratton</option>
+            <option value="9">Clive Burr</option>
+            <option value="10">Nicko McBrain</option>
+        </select>
+          <h2 id="nome">Nome do Membro</h2>
+          <p id="funcao">Função: Função do Membro</p>
+          <p id="dtE">Data de Entrada: Data de Entrada do Membro</p>
+          <p id="dtS">Data de Saída: Data de Saída do Membro</p>
+          <p id="local">Local de Nascimento: Local de Nascimento do Membro</p>
+          <p id="dtNas">Data de Nascimento: Data de Nascimento do Membro</p>
+        </div>
+        <div class="member-img">
+          <img id ='foto' src="" alt="Foto do Membro">
+        </div>
+      </div>
+  </section>
+  </div>
+  <div class="footer">
+    <div class="container4">
+      <h4>Iron Maiden Project</h4>
+      <span>Criado por Rafael Henrique SP-TECH 2023</span>
+    </div>
+  </div>
+</body>
+</html>

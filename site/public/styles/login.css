@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    max-width: 1200px;
+    margin-left: 40px;
+    background-image: url("../img/albuns.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 560px;
+    margin-top: 30px;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:  #27282c;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login>h1 {
+    color: red;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-field {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text-field>input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background: #333;
+    color: red;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field>label {
+    color: #FFCC00;
+    margin-bottom: 10px;
+}
+
+.botao-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: red;
+    color: black;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+}
+button:hover{
+    color: #FFCC00;
+    cursor: pointer;
+}

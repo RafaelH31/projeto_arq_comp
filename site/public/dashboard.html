@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link href='https://fonts.googleapis.com/css?family=times new roman' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>IRON MAIDEN</title>
+
+    <header class="header">
+        <div class="logo">
+            <span>IRON MAIDEN</span>
+        </div>
+        <div class="buttons">
+            <a href="playlist.html" style="--anima:#00F519"><span>Playlist</span></a>
+            <a href="albuns.html" style="--anima:#8a2be2"><span>álbuns</span></a>
+            <a href="index.html" style="--anima:#ff0000"><span>home</span></a>
+        </div>
+    </header>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="chart-container">
+            <div id="chart2" class="chart"><canvas id="Vezes_Chart"></canvas></div>
+        </div>
+        <div class="chart-container">
+            <div id="chart3" class="chart"><canvas id="Favoritos_Chart"></canvas></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container2">
+          <h4>Iron Maiden Project</h4>
+          <span>Criado por Rafael Henrique SP-TECH 2023</span>
+        </div>
+      </div>
+</body>
+
+</html>
+<script>
+    window.onload = calcularVezes()
+    window.onload = calcularFavoritos()
+
+
+
+    const ctx2 = document.getElementById('Vezes_Chart');
+    const ctx3 = document.getElementById('Favoritos_Chart');
+    var vetorAlbuns = []
+    var vetorFavoritos = []
+
+    function calcularVezes() {
+
+        fetch(`/album/calcularVezes/`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                    console.log(resposta)
+                    for (var c = 0; c < resposta.length; c++) {
+                        var registro = resposta[c];
+                        vetorAlbuns.push(registro.vezes);
+
+                    }
+                    console.log(vetorAlbuns);
+                    new Chart(ctx2, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Iron Maiden 1980', 'Killers 1981', 'The Number of the Beast 1982', 'Piece of Mind 1983', 'Powerslave 1984', 'Somewhere in Time 1986', 'Seventh Son of a Seventh Son 1988', 'No Prayer for the Dying 1990', 'Fear of the Dark 1992', 'The X Factor 1995', 'Virtual XI 1998', 'Brave New World 2000', 'Dance of Death 2003', 'A Matter of Life and Death 2006', 'The Final Frontier 2010', 'The Book of Souls 2015', 'Senjutsu 2021'],
+                            datasets: [{
+                                label: 'Álbuns mais clicados no site',
+                                data: vetorAlbuns,
+                                backgroundColor: [
+                                    'rgba(181,163,59,0.8)',
+                                    'rgba(218,207,203,0.8)',
+                                    'rgba(255, 0, 0, 0.8)',
+                                    'rgba(226,218,105,0.8)',
+                                    'rgba(222,177,117,0.8)',
+                                    'rgba(143,173,207,0.8)',
+                                    'rgba(159,201,216,0.8)',
+                                    'rgba(72,60,132,0.8)',
+                                    'rgba(0,0,0,0.5)',
+                                    'rgba(144,103,132,0.8)',
+                                    'rgba(234,119,46,0.8)',
+                                    'rgba(76,66,133,0.8)',
+                                    'rgba(202,184,132,0.8)',
+                                    'rgba(79,87,74,0.8)',
+                                    'rgba(71,117,45,0.8)',
+                                    'rgba(235,235,235,0.8)',
+                                    'rgba(160,61,59,0.8)'
+
+                                ],
+                                borderWidth: 4,
+                                borderColor: [
+                                    'rgba(181,163,59,255)',
+                                    'rgba(218,207,203,255)',
+                                    'rgba(255, 0, 0, 1)',
+                                    'rgba(226,218,105,255)',
+                                    'rgba(222,177,117,255)',
+                                    'rgba(143,173,207,255)',
+                                    'rgba(159,201,216,255)',
+                                    'rgba(72,60,132,255)',
+                                    'rgba(0,0,0,255)',
+                                    'rgba(144,103,132,255)',
+                                    'rgba(234,119,46,255)',
+                                    'rgba(76,66,133,255)',
+                                    'rgba(202,184,132,255)',
+                                    'rgba(79,87,74,255)',
+                                    'rgba(71,117,45,255)',
+                                    'rgba(235,235,235,255)',
+                                    'rgba(160,61,59,255)',
+
+                                ]
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        color: 'white'
+                                    }
+                                },
+                                x: {
+                                    ticks: {
+                                        color: 'white'
+                                    }
+                                }
+                            },
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: 'Álbuns mais clicados nas músicas aleatórias',
+                                    color: 'white',
+                                    font: {
+                                        size: 13
+                                    }
+                                },
+
+                                legend: {
+                                    display: false,
+                                    labels: {
+                                        text: 'Álbuns mais clicados nas músicas aleatórias',
+                                        color: 'white'  // Define a cor da fonte da legenda como branco
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+function calcularFavoritos() {
+
+        fetch(`/album/calcularFavoritos/`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                    console.log(resposta)
+                    for (var c2 = 0; c2 < resposta.length; c2++) {
+                        var registro2 = resposta[c2];
+                        vetorFavoritos.push(registro2.quantidade);
+                    }
+                    console.log(vetorFavoritos);
+                    new Chart(ctx3, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Iron Maiden 1980', 'Killers 1981', 'The Number of the Beast 1982', 'Piece of Mind 1983', 'Powerslave 1984', 'Somewhere in Time 1986', 'Seventh Son of a Seventh Son 1988', 'No Prayer for the Dying 1990', 'Fear of the Dark 1992', 'The X Factor 1995', 'Virtual XI 1998', 'Brave New World 2000', 'Dance of Death 2003', 'A Matter of Life and Death 2006', 'The Final Frontier 2010', 'The Book of Souls 2015', 'Senjutsu 2021'],
+                            datasets: [{
+                                label: 'Álbuns favoritos',
+                                data: vetorFavoritos,
+                                backgroundColor: [
+                                    'rgba(181,163,59,0.8)',
+                                    'rgba(218,207,203,0.8)',
+                                    'rgba(255, 0, 0, 0.8)',
+                                    'rgba(226,218,105,0.8)',
+                                    'rgba(222,177,117,0.8)',
+                                    'rgba(143,173,207,0.8)',
+                                    'rgba(159,201,216,0.8)',
+                                    'rgba(72,60,132,0.8)',
+                                    'rgba(0,0,0,0.5)',
+                                    'rgba(144,103,132,0.8)',
+                                    'rgba(234,119,46,0.8)',
+                                    'rgba(76,66,133,0.8)',
+                                    'rgba(202,184,132,0.8)',
+                                    'rgba(79,87,74,0.8)',
+                                    'rgba(71,117,45,0.8)',
+                                    'rgba(235,235,235,0.8)',
+                                    'rgba(160,61,59,0.8)'
+
+                                ],
+                                borderWidth: 4,
+                                borderColor: [
+                                    'rgba(181,163,59,255)',
+                                    'rgba(218,207,203,255)',
+                                    'rgba(255, 0, 0, 1)',
+                                    'rgba(226,218,105,255)',
+                                    'rgba(222,177,117,255)',
+                                    'rgba(143,173,207,255)',
+                                    'rgba(159,201,216,255)',
+                                    'rgba(72,60,132,255)',
+                                    'rgba(0,0,0,255)',
+                                    'rgba(144,103,132,255)',
+                                    'rgba(234,119,46,255)',
+                                    'rgba(76,66,133,255)',
+                                    'rgba(202,184,132,255)',
+                                    'rgba(79,87,74,255)',
+                                    'rgba(71,117,45,255)',
+                                    'rgba(235,235,235,255)',
+                                    'rgba(160,61,59,255)',
+
+                                ]
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        color: 'white'
+                                    }
+                                },
+                                x: {
+                                    ticks: {
+                                        color: 'white'
+                                    }
+                                }
+                            },
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: 'Álbuns favoritos dos usuarios do site',
+                                    color: 'white',
+                                    font: {
+                                        size: 13
+                                    }
+                                },
+
+                                legend: {
+                                    display: false,
+                                    labels: {
+                                        text: 'Álbuns favoritos dos usuarios',
+                                        color: 'white'
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+</script>

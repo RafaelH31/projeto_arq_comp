@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    background: #010200;
+    max-width: 1200px;
+    margin-left: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #FFCC00; 
+}
+
+.main-cadastro-user{
+    width: 100vw;
+    height: 100vh;
+    background: #010200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-cadastro-user{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.left-cadastro-user > h1 {
+    font-size: 3vw;
+    color: red;
+}
+
+.left-cadastro-user-image{
+    margin-top: 65px;
+    width: 100%;
+    height: 100%;
+}
+
+.right-cadastro-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 560px;
+    margin-top: 40px;
+   
+}
+
+
+.card-cadastro-user{
+    width: 70%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-cadastro-user > h1 {
+    color: red;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-field{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text-field > input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    background: #F9F9F9;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field > label{
+    color: #FFCC00;
+    margin-bottom: 10px;
+}
+
+.botao-cadastro-user{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: red;
+    color: #ffffff;
+    letter-spacing: 3px;
+    cursor: pointer;
+    
+}
+
+.botao-cadastro-user:hover{
+    color: #FFCC00;
+    cursor: pointer;
+}
+ select{
+    width: 160px;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: red;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+ 
+ select:focus {
+    outline: 2px solid #FFCC00;
+}
