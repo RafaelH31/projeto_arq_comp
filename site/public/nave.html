@@ -3,7 +3,7 @@
   <head><title>NAVE</title></head>
   <body>
     <h1>MATE OS VIRUS</h1>
-    <canvas id="canvas" width="800" height="600"></canvas>   
+    <canvas id="canvas" width="1200" height="800"></canvas>   
     <script>
       class GameObject {
         constructor(x, y, width, height, color) {
@@ -49,9 +49,9 @@
         constructor(x, y, width, height, color, canvasHeight) {
           super(x, y, width, height, color);
           this.canvasHeight = canvasHeight;
-          this.bulletWidth = 1;
-          this.bulletHeight = 2;
-          this.bulletColor = "#ff7800";
+          this.bulletWidth = 10;
+          this.bulletHeight = 10;
+          this.bulletColor = "#ffffff";
           this.bullets = [];
         }
 
@@ -141,19 +141,19 @@
       game.canvas = document.getElementById('canvas');
       game.ctx = game.canvas.getContext('2d');
   
-      game.backgroundColor = '#000000';
+      // game.backgroundImage.src="media/1000_F_129028959_MjTrdUdC49ZdG5DXAa5mhWevFurtSMte.jpeg"
 
       game.asteroidsParts = 10;
-      game.noOfAsteroids = 10;
+      game.noOfAsteroids = 13;
       game.asteroidsSpace = 85;
 
-      game.enemiesEachLine = 20;
+      game.enemiesEachLine = 25;
       game.enemyLines = 8;
       game.enemySpace = 30;
-      game.enemyFireRate = 1000;
+      game.enemyFireRate = 100;
       game.enemyFireTimer = 0;
       game.enemyDirection = 1;
-      game.enemyStep = 5;
+      game.enemyStep = 10;
       
       game.update = function() {
         game.ctx.fillStyle = game.backgroundColor;
@@ -320,6 +320,8 @@
         game.stop();
         game.init();
       }
+
+      
 
       window.onload = game.init;
 

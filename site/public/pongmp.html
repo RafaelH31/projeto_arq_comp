@@ -51,19 +51,19 @@ var rightPaddleY = 175;
 document.addEventListener('keydown', function(event) {
   // Se o usuário pressionou a tecla 'W', move a raquete esquerda para cima
   if (event.key === 'w') {
-    leftPaddleY -= 10;
+    leftPaddleY -= 25;
   }
   // Se o usuário pressionou a tecla 'S', move a raquete esquerda para baixo
   else if (event.key === 's') {
-    leftPaddleY += 10;
+    leftPaddleY += 25;
   }
   // Se o usuário pressionou a tecla 'ArrowUp', move a raquete direita para cima
   else if (event.key === 'ArrowUp') {
-    rightPaddleY -= 10;
+    rightPaddleY -= 25;
   }
   // Se o usuário pressionou a tecla 'ArrowDown', move a raquete direita para baixo
   else if (event.key === 'ArrowDown') {
-    rightPaddleY += 10;
+    rightPaddleY += 25;
   }
 });
 
@@ -119,6 +119,17 @@ ctx.fill();
 
 // Chama a função drawBall a cada frame para atualizar a tela
 setInterval(drawBall, 1000/60);
+// Adiciona um event listener para detectar quando o usuário pressiona uma tecla
+document.addEventListener('keydown', function(event) {
+  // Se o usuário pressionou a tecla 'W', move a raquete esquerda para cima
+  if (event.key === 'w') {
+    leftPaddleY -= 25;
+  }
+  // Se o usuário pressionou a tecla 'S', move a raquete esquerda para baixo
+  else if (event.key === 's') {
+    leftPaddleY += 25;
+  }
+});
 
 
 </script>
