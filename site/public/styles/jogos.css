@@ -192,7 +192,7 @@ a span {
 
 .container {
     width: 100%;
-    height: 170vh;
+    height: 85vh;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -201,7 +201,7 @@ a span {
 }
 
 .container-item {
-    width: 280px;
+    width: 480px;
     height: 280px;
     margin: 10px;
     position: relative;
@@ -210,6 +210,13 @@ a span {
 
 .container-item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+#doomImg img{
+    width: fit-content;
     height: 100%;
     object-fit: cover;
     transition: filter 0.3s;

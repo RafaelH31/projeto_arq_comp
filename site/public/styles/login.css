@@ -2,7 +2,7 @@ body {
     margin: 0px;
     max-width: 1200px;
     margin-left: 40px;
-    background-image: url("../img/jogos.jpeg");
+    background-image: url("../media/teladeinicio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -40,7 +40,7 @@ body {
 }
 
 .card-login>h1 {
-    color: red;
+    color: #adff2f;
     font-weight: 700;
     margin: 0;
 }
@@ -60,7 +60,7 @@ body {
     border: none;
     padding: 15px;
     background: #333;
-    color: red;
+    color:#adff2f;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
@@ -68,7 +68,7 @@ body {
 }
 
 .text-field>label {
-    color: #FFCC00;
+    color: #469DEB;
     margin-bottom: 10px;
 }
 
@@ -81,13 +81,12 @@ body {
     outline: none;
     font-weight: 700;
     text-transform: uppercase;
-    background: red;
-    color: black;
+    background: #7242C9;
+    color: #adff2f;
     letter-spacing: 3px;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00000056;
 }
 button:hover{
-    color: #FFCC00;
     cursor: pointer;
 }

@@ -5,7 +5,6 @@ body {
     margin-left: 40px;
     overflow-x: hidden;
     overflow-y: hidden;
-    color: #FFCC00; 
 }
 
 .main-cadastro-user{
@@ -67,7 +66,7 @@ body {
 }
 
 .text-field > label{
-    color: #FFCC00;
+    color: #adff2f;
     margin-bottom: 10px;
 }
 
@@ -80,15 +79,18 @@ body {
     outline: none;
     font-weight: 700;
     text-transform: uppercase;
-    background: red;
-    color: #ffffff;
+    background: #7242C9;
+    color: #adff2f;
     letter-spacing: 3px;
     cursor: pointer;
+
 }
 
 .botao-cadastro-user:hover{
-    color: #FFCC00;
+    color: #469DEB;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     cursor: pointer;
+    
 }
  select{
     width: 160px;
@@ -97,11 +99,11 @@ body {
     cursor: pointer;
     border: none;
     background-color: #333;
-    color: red;
+    color: #469DEB;
     border: 2px solid black;
     border-radius: 4px;
   }
  
  select:focus {
-    outline: 2px solid #FFCC00;
+    outline: 2px solid #adff2f;
 }
