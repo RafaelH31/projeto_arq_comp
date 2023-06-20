@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ÁLBUNS</title>
   <script src="./js/funcoes.js"></script>
-  <script src="./js/albuns.js"></script>
-  <link rel="stylesheet" href="styles/albuns.css">
+  <script src="./js/jogos.js"></script>
+  <link rel="stylesheet" href="styles/jogos.css">
 
 </head>
 
@@ -19,7 +19,6 @@
       <span>IRON MAIDEN</span>
     </div>
     <div class="buttons">
-      <a href="playlist.html" style="--anima:#00F519"><span>Playlist</span></a>
       <a href="dashboard.html" style="--anima:#8a2be2"><span>Estatísticas</span></a>
       <a href="index.html" style="--anima:#ff0000"><span>home</span></a>
     </div>
@@ -28,21 +27,21 @@
     <div class="container-item">
       <img src="img/Iron maiden 1 album.webp" alt="">
       <div class="image-overlay">
-        <button onclick="albumIron(); playmusic()" class="overlay-button">JOGO DA NAVE</button>
+        <button onclick="nave(); playmusic()" class="overlay-button">JOGO DA NAVE</button>
         <button id='ironInfo' onclick="info('ironInfo')" class="overlay-button">Informações</button>
       </div>
     </div>
     <div class="container-item">
       <img src="img/Killers.jpg" alt="">
       <div class="image-overlay">
-        <button onclick="albumKillers(); playmusic()" class="overlay-button">CRUZADA</button>
+        <button onclick="cruzada(); playmusic()" class="overlay-button">CRUZADA</button>
         <button id='killersInfo' onclick="info('killersInfo')" class="overlay-button">Informações</button>
       </div>
     </div>
     <div class="container-item">
       <img src="img/the number of the beast.jpg" alt="">
       <div class="image-overlay">
-        <button onclick="albumBeast(); playmusic()" class="overlay-button">PONG</button>
+        <button onclick="pong(); playmusic()" class="overlay-button">PONG</button>
         <button id='BeastInfo' onclick="info('BeastInfo')" class="overlay-button">Informações</button>
       </div>
     </div>
@@ -50,6 +49,6 @@
     <div class="container-item">
       <img src="img/powerslave.jpg" alt="">
       <div class="image-overlay">
-        <button onclick="albumPower(); playmusic()" class="overlay-button">Estatísticas</button>
+        <button onclick="dashboard(); playmusic()" class="overlay-button">Estatísticas</button>
         <button id='PowerslaveInfo' onclick="info('PowerslaveInfo')" class="overlay-button">Informações</button>
       </div>

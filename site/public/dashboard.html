@@ -16,8 +16,7 @@
             <span>IRON MAIDEN</span>
         </div>
         <div class="buttons">
-            <a href="playlist.html" style="--anima:#00F519"><span>Playlist</span></a>
-            <a href="albuns.html" style="--anima:#8a2be2"><span>álbuns</span></a>
+            <a href="jogos.html" style="--anima:#8a2be2"><span>álbuns</span></a>
             <a href="index.html" style="--anima:#ff0000"><span>home</span></a>
         </div>
     </header>
@@ -50,7 +49,7 @@
 
     const ctx2 = document.getElementById('Vezes_Chart');
     const ctx3 = document.getElementById('Favoritos_Chart');
-    var vetorAlbuns = []
+    var vetorclicks = []
     var vetorFavoritos = []
 
     function calcularVezes() {
@@ -63,17 +62,17 @@
                     console.log(resposta)
                     for (var c = 0; c < resposta.length; c++) {
                         var registro = resposta[c];
-                        vetorAlbuns.push(registro.vezes);
+                        vetorclicks.push(registro.vezes);
 
                     }
-                    console.log(vetorAlbuns);
+                    console.log(vetorclicks);
                     new Chart(ctx2, {
                         type: 'bar',
                         data: {
                             labels: ['jogo da nave', 'cruzada', 'pong'],
                             datasets: [{
                                 label: 'vezes jogado',
-                                data: vetorAlbuns,
+                                data: vetorclicks,
                                 backgroundColor: [
                                     'rgba(181,163,59,0.8)',
                                     'rgba(218,207,203,0.8)',

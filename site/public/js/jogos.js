@@ -1,6 +1,6 @@
   window.onload = calcularVezes()
 
-  var vetorAlbuns = []
+  var vetorclicks = []
   var cont1 = 0
   var cont2 = 0
   var cont3 = 0
@@ -151,16 +151,16 @@
           console.log(resposta)
           for (var c = 0; c < resposta.length; c++) {
             var registro = resposta[c];
-            vetorAlbuns.push(registro.vezes);
+            vetorclicks.push(registro.vezes);
 
           }
 
-          cont1 = vetorAlbuns[0]
-          cont2 = vetorAlbuns[1]
-          cont3 = vetorAlbuns[2]
+          cont1 = vetorclicks[0]
+          cont2 = vetorclicks[1]
+          cont3 = vetorclicks[2]
 
 
-          localStorage.setItem("dados_vezes", JSON.stringify(vetorAlbuns));
+          localStorage.setItem("dados_vezes", JSON.stringify(vetorclicks));
         });
       } else {
         console.error('Nenhum dado encontrado ou erro na API');
@@ -175,20 +175,20 @@
   var id = ""
   var cont = 0
 
-  function albumIron() {
+  function nave() {
     cont1++
     cont = cont1
     id = 1
     window.location = "nave.html"
   }
-  function albumKillers() {
+  function cruzada() {
     cont2++
     cont = cont2
     id = 2
 
     window.location = "cruzada.html"
   }
-  function albumBeast() {
+  function pong() {
    
     cont3++
     cont = cont3
@@ -196,7 +196,7 @@
 
     window.location = "pongmp.html"
   }
-  function albumPower() {
+  function dashboard() {
     // album = powerslave
     // cont5++
     // cont = cont5

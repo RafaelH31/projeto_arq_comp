@@ -29,7 +29,7 @@ fetch("/usuarios/autenticar", {
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "albuns.html";
+                        window.location = "jogos.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
