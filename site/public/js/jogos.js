@@ -205,7 +205,7 @@
 
   }
 
-  function playmusic() {
+  function jogarJ() {
 
     fetch("/album/atualizarVezes/", {
       method: "PUT",
