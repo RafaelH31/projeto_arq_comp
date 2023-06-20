@@ -1,135 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <div> <canvas id="myCanvas"></canvas>
-    </div>
-  </body>
+  <div>
+    <canvas id="myCanvas"></canvas>
+  </div>
 
+  <button onclick="startgame()">Start game</button>
+
+
+  <script src="./js/pong.js"></script>
+</body>
 </html>
-
-<script>
-    var canvas = document.getElementById('myCanvas');
-var ctx = canvas.getContext('2d');
-
-// Set the width and height of the canvas
-canvas.width = 600;
-canvas.height = 400;
-
-// Set the background color of the canvas
-ctx.fillStyle = 'black';
-ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-// Set the color of the paddles and ball
-ctx.fillStyle = 'green';
-
-// Draw the left paddle
-ctx.fillRect(50, 175, 25, 50);
-
-// Draw the right paddle
-ctx.fillRect(525, 175, 25, 50);
-
-// Draw the ball
-ctx.beginPath();
-ctx.arc(300, 200, 10, 0, Math.PI * 2);
-ctx.fill();
-
-
-
-//
-
-// Variáveis para armazenar a posição das raquetes
-var leftPaddleY = 175;
-var rightPaddleY = 175;
-
-// Adiciona um event listener para detectar quando o usuário pressiona uma tecla
-document.addEventListener('keydown', function(event) {
-  // Se o usuário pressionou a tecla 'W', move a raquete esquerda para cima
-  if (event.key === 'w') {
-    leftPaddleY -= 25;
-  }
-  // Se o usuário pressionou a tecla 'S', move a raquete esquerda para baixo
-  else if (event.key === 's') {
-    leftPaddleY += 25;
-  }
-  // Se o usuário pressionou a tecla 'ArrowUp', move a raquete direita para cima
-  else if (event.key === 'ArrowUp') {
-    rightPaddleY -= 25;
-  }
-  // Se o usuário pressionou a tecla 'ArrowDown', move a raquete direita para baixo
-  else if (event.key === 'ArrowDown') {
-    rightPaddleY += 25;
-  }
-});
-
-// Função para desenhar as raquetes na tela
-function drawPaddles() {
-  // Limpa o canvas
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  // Desenha o fundo do canvas
-  ctx.fillStyle = 'black';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  // Desenha as raquetes
-  ctx.fillStyle = 'green';
-  ctx.fillRect(50, leftPaddleY, 25, 50);
-  ctx.fillRect(525, rightPaddleY, 25, 50);
-}
-
-// Chama a função drawPaddles a cada frame para atualizar a tela
-setInterval(drawPaddles, 1000/60);
-
-
-
-// Variáveis para armazenar a posição e velocidade da bola
-var ballX = 300;
-var ballY = 200;
-var ballSpeedX = -5;
-var ballSpeedY = -5;
-
-// Função para desenhar a bola na tela
-function drawBall() {
-    // Atualiza a posição da bola
-    ballX += ballSpeedX;
-    ballY += ballSpeedY;
-
-    // Verifica se a bola colidiu com uma das bordas superior ou inferior do canvas e inverte sua velocidade vertical
-    if (ballY < 0 || ballY > canvas.height) {
-        ballSpeedY = -ballSpeedY;
-    }
-
-    // Verifica se a bola colidiu com uma das raquetes e inverte sua velocidade horizontal
-   // Verifica se a bola colidiu com uma das raquetes e inverte sua velocidade horizontal
-if ((ballX < 75 && ballY > leftPaddleY && ballY < leftPaddleY + 50) ||
-    (ballX > 525 && ballY > rightPaddleY && ballY < rightPaddleY + 50)) {
-    ballSpeedX = -ballSpeedX;
-}
-
-// Desenha a bola na tela
-ctx.beginPath();
-ctx.arc(ballX, ballY, 10, 0, Math.PI * 2);
-ctx.fill();
-}
-
-// Chama a função drawBall a cada frame para atualizar a tela
-setInterval(drawBall, 1000/60);
-// Adiciona um event listener para detectar quando o usuário pressiona uma tecla
-document.addEventListener('keydown', function(event) {
-  // Se o usuário pressionou a tecla 'W', move a raquete esquerda para cima
-  if (event.key === 'w') {
-    leftPaddleY -= 25;
-  }
-  // Se o usuário pressionou a tecla 'S', move a raquete esquerda para baixo
-  else if (event.key === 's') {
-    leftPaddleY += 25;
-  }
-});
-
-
-</script>
