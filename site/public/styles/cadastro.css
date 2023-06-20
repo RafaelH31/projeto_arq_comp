@@ -10,32 +10,10 @@ body {
 
 .main-cadastro-user{
     width: 100vw;
-    height: 100vh;
-    background: #010200;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.left-cadastro-user{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 60px;
-}
-
-.left-cadastro-user > h1 {
-    font-size: 3vw;
-    color: red;
-}
-
-.left-cadastro-user-image{
-    margin-top: 65px;
-    width: 100%;
-    height: 100%;
 }
 
 .right-cadastro-user{
@@ -43,11 +21,9 @@ body {
     justify-content: center;
     align-items: center;
     width: 560px;
-    height: 560px;
-    margin-top: 40px;
-   
+    height: 500px;
+    margin-top: 40px;  
 }
-
 
 .card-cadastro-user{
     width: 70%;
@@ -108,7 +84,6 @@ body {
     color: #ffffff;
     letter-spacing: 3px;
     cursor: pointer;
-    
 }
 
 .botao-cadastro-user:hover{
