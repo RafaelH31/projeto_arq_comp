@@ -16,9 +16,10 @@
 <body>
   <header class="header">
     <div class="logo">
-      <span>PROJETO ARQ COMP</span>
+      <span>HUB DE JOGOS</span>
     </div>
     <div class="buttons">
+      <a href="dashboard.html" style="--anima:#8a2be2"><span>ARQ COMP</span></a>
       <a href="dashboard.html" style="--anima:#8a2be2"><span>Estatísticas</span></a>
       <a href="index.html" style="--anima:#ff0000"><span>home</span></a>
     </div>
@@ -65,5 +66,22 @@
         <button onclick="pong(); playmusic()" class="overlay-button">JOGAR</button>
         <button id='BeastInfo' onclick="info('BeastInfo')" class="overlay-button">Informações</button>
       </div>
+    </div>
+  </div>
+  <div id="containerAlerta">
+    <div id="texto-info">
+      <h1 id="tituloAlbum">Iron Maiden</h1>
+      <h2 id="Data-de-lancamento">Data de lançamento: <span id="DataTexto"></span></h2>
+      <h2 id="Numero-de-musicas">Número de músicas: <span id="NumeroTexto"></span></h2>
+      <h2 id="Duracao-total">Duração total: <span id="DuracaoTexto"></span></h2>
+      <h2 id="Gravadora">Gravadora: <span id="GravadoraTexto"></span></h2>
+      <h2 id="DiscosVendidos">Discos Vendidos: <span id="DiscosTexto"></span></h2>
+    </div>
+    <button id="voltar" onclick="voltar()">Voltar</button>
+  </div>
+  <div class="footer">
+    <div class="container4">
+      <h4>Arquitetura Computacional</h4>
+      <span>Criado por Rafael Henrique e Enzo Stanganelli SP-TECH 2023</span>
     </div>
   </div>

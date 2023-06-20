@@ -17,13 +17,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #7242C9;
     z-index: 99;
 }
 
 .logo {
     display: inline-block;
-    color: red;
+    color: #adff2f;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 50px;
     font-weight: bold;
@@ -246,23 +246,51 @@ a span {
 }
 
 .overlay-button {
-    color: red;
+    color: #adff2f;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     background-color: #333;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin-top: 10px;
-    border-radius: 5%;
     border: 2px solid black;
     cursor: pointer;
 }
 .overlay-button:hover {
-    color: #FFCC00;
+    color: #469DEB;
     cursor: pointer;
 }
 .botoes {
     display: flex;
     flex-direction: column;
 }
+.container4 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .footer {
+    border-top: 2px solid #7242C9;
+    height: 65px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer h4 {
+    margin: 0;
+  }
+  
+  .footer .container4 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .footer .container4 .version {
+    font-size: 12px;
+    font-weight: 800;
+  }
