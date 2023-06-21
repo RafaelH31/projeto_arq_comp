@@ -1,8 +1,19 @@
 @font-face {
     font-family: 'Iron Maiden';
     src: url('maiden.ttf');
-}
-
+  }
+  @font-face {
+    font-family: 'Robot';
+    src: url('RobotInvaders-d9VmR.ttf');
+  }
+  @font-face {
+    font-family: 'SpaceCrusaders1';
+    src: url('SpaceCrusaders-x3DP0.ttf');
+  }
+  @font-face {
+    font-family: 'SpaceCrusaders2';
+    src: url('SpaceCrusadersItalic-ZV1Zx.ttf');
+  }
 
 body {
     margin: 0;
@@ -19,6 +30,7 @@ body {
     padding: 0 50px;
     border-bottom: 2px solid #7242C9;
     z-index: 99;
+    
 }
 
 .logo {
@@ -27,7 +39,7 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 50px;
     font-weight: bold;
-    font-family: 'Iron Maiden'!important;
+    font-family: 'SpaceCrusaders2'!important;
 }
 
 

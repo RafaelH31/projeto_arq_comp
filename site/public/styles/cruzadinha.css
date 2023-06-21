@@ -1,0 +1,209 @@
+
+        @font-face {
+            font-family: 'Iron Maiden';
+            src: url('maiden.ttf');
+        }
+
+        @font-face {
+            font-family: 'Robot';
+            src: url('RobotInvaders-d9VmR.ttf');
+        }
+
+        @font-face {
+            font-family: 'SpaceCrusaders1';
+            src: url('SpaceCrusaders-x3DP0.ttf');
+        }
+
+        @font-face {
+            font-family: 'SpaceCrusaders2';
+            src: url('SpaceCrusadersItalic-ZV1Zx.ttf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("media/teladeinicio.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: monospace;
+            background-color: #272727;
+        }
+
+        header h1 {
+            color: #7242C9;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        header {
+            background-color: #333;
+            border-bottom: 1px yellowgreen solid;
+            font-family: 'SpaceCrusaders2'!important;
+        }
+
+
+        table {
+            border: 1px #469DEB solid;
+            font-size: 25px;
+            margin-left: 130px;
+            margin: auto;
+
+        }
+
+
+        tr {
+            border: 1px #469DEB solid;
+        }
+
+        td {
+            border: 1px #adff2f solid;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+        }
+
+
+        .container {
+            margin-top: 100px;
+            width: 1100px;
+            margin: auto;
+        }
+
+        #div_game {
+
+            background-color: #333;
+            margin: auto;
+            width: 800px;
+            height: 700px;
+            border: 2px solid yellowgreen;
+        }
+
+        #div_questions {
+            background-color: #469DEB;
+            width: 700px;
+            height: 70px;
+            margin: auto;
+            border: 2px solid yellowgreen;
+        }
+
+        .button {
+            display: inline-block;
+            position: relative;
+            background: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 5px 20px;
+            /*10 px no topo e base, 30 px no lado direito e esquerdo*/
+            transition: 0.5s;
+
+            padding: 10px;
+            border-radius: 2px;
+            color: rgb(0, 140, 255);
+            margin-left: 10px;
+            font-size: 10px;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            color: yellowgreen;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            padding: 2px;
+            background: #333;
+            color: #adff2f;
+            font-size: 10pt;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        #button_verify {
+            width: 100px;
+            margin: auto;
+        }
+
+        #input_answer {
+            width: 100px;
+            margin: auto;
+        }
+
+        .deadCell {
+            background-color: #469DEB;
+        }
+
+        .availableCell {
+            background-color: #ffffff;
+        }
+
+
+        #div_information {
+            width: 500px;
+            margin: auto;
+            background-color: #469DEB;
+            font-size: 20px;
+            border: 2px solid yellowgreen;
+        }
+
+
+        #div_verifiedAnswer {
+            width: 500px;
+            height: 70px;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+            vertical-align: center;
+            margin-bottom: 20px;
+        }
+
+        .correctAnswer {
+            background-color: #58D68D;
+            color: #196F3D;
+            border: 1px #196F3D solid;
+        }
+
+        .wrongAnswer {
+            background-color: #7242C9;
+            color: black;
+            border: 1px greenyellow solid;
+
+        }
+
+        .container4 {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+
+        .footer {
+            border-top: 2px solid #7242C9;
+            height: 65px;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .footer h4 {
+            margin: 0;
+        }
+
+        .footer .container4 {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .footer .container4 .version {
+            font-size: 20px;
+            font-weight: 800;
+        }
+    
