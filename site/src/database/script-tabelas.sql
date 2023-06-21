@@ -1,5 +1,5 @@
 Create database projetocomp;
-USE projetocomp;
+USE rapazes;
 Drop database rapazes;
 DROP table usuario;
 
@@ -19,10 +19,12 @@ Create table jogo (
 idjogo INT PRIMARY KEY,
 Vezes_Selecionado INT
 );
+
+
 insert into jogo VALUES 
 (1, 0),
 (2, 0),
 (3, 0),
 (4, 0);
-
  INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('rafael', 'rafael.cebrian@sptech.school.com', '1234567@', '1');
+ INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('enzo', 'enzo.gama@sptech.school.com', '1234567@', '2');

@@ -16,12 +16,12 @@
       sobreTexto.innerHTML = 'Space Invaders is a classic arcade game in which the player moves a laser cannon horizontally across the bottom of the screen and fires at aliens overhead. The goal is to eliminate all of the aliens by shooting them. It was one of the earliest video games released and became one of the first coin-op video arcade games to enjoy mega-success worldwide.'
 
     } else if (btnId === "cruzada") {
-      nomeDoJogo.innerHTML = 'Killers'
-      DataTexto.innerHTML = '2 de fevereiro, 1981'
-      NumeroTexto.innerHTML = '10 músicas'
-      lucroTexto.innerHTML = '38:49 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '4.855 milhões de unidades'
+      nomeDoJogo.innerHTML = 'cruzada'
+      DataTexto.innerHTML = '??'
+      NumeroTexto.innerHTML = '??'
+      lucroTexto.innerHTML = '??'
+      publiTexto.innerHTML = '??'
+      sobreTexto.innerHTML = 'O jogo de palavras cruzadas é um passatempo bastante difundido. Consiste de várias linhas formadas por quadrados em branco, algumas na vertical e outras na horizontal, que se cruzam umas com as outras.'
     } else if (btnId === "pongInfo") {
       nomeDoJogo.innerHTML = 'pong'
       DataTexto.innerHTML = '29 November 1972'
@@ -29,105 +29,7 @@
       lucroTexto.innerHTML = '$35-40 dollars a day em 35k de maquinas'
       publiTexto.innerHTML = 'ataro'
       sobreTexto.innerHTML = 'Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. They can compete against another player controlling a second paddle on the opposing side. It was one of the first computer games ever created and was released by Atari in 1972.'
-    } else if (btnId === "PieceInfo") {
-      nomeDoJogo.innerHTML = 'Piece of Mind'
-      DataTexto.innerHTML = '16 de maio, 1983'
-      NumeroTexto.innerHTML = '9 músicas'
-      lucroTexto.innerHTML = '45:04 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '6.615 milhões de unidades'
-    } else if (btnId === "PowerslaveInfo") {
-      nomeDoJogo.innerHTML = 'Powerslave'
-      DataTexto.innerHTML = '3 de setembro, 1984'
-      NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '51:12 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '5.610 milhões de unidades'
-    } else if (btnId === "SomewhereInfo") {
-      nomeDoJogo.innerHTML = 'Somewhere in Time'
-      DataTexto.innerHTML = '29 de setembro, 1986'
-      NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '51:17 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '5.290 milhões de unidades'
-    } else if (btnId === "SeventhInfo") {
-      nomeDoJogo.innerHTML = 'Seventh Son of a Seventh Son'
-        DataTexto.innerHTML = '11 de abril, 1988'
-        NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '44:06 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '4.815 milhões de unidades'
-    } else if (btnId === "PrayerInfo") {
-      nomeDoJogo.innerHTML = 'No Prayer for the Dying'
-      DataTexto.innerHTML = '1 de outubro, 1990'
-      NumeroTexto.innerHTML = '10 músicas'
-      lucroTexto.innerHTML = '43:53 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '3.010 milhões de unidades'
-    } else if (btnId === "FearInfo") {
-      nomeDoJogo.innerHTML = 'Fear of the Dark'
-      DataTexto.innerHTML = '11 de maio, 1992'
-      NumeroTexto.innerHTML = '12 músicas'
-      lucroTexto.innerHTML = '58:37 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '3.615 milhões de unidades'
-    } else if (btnId === "XInfo") {
-      nomeDoJogo.innerHTML = 'The X Factor'
-      DataTexto.innerHTML = '2 de outubro, 1995'
-      NumeroTexto.innerHTML = '11 músicas'
-      lucroTexto.innerHTML = '66:57 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '1.410 milhões de unidades'
-    } else if (btnId === "XiInfo") {
-      nomeDoJogo.innerHTML = 'Virtual XI'
-      DataTexto.innerHTML = '23 de março, 1998'
-      NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '53:19 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '1.185 milhões de unidades'
-    } else if (btnId === "BraveInfo") {
-      nomeDoJogo.innerHTML = 'Brave New World'
-      DataTexto.innerHTML = '29 de maio, 2000'
-      NumeroTexto.innerHTML = '10 músicas'
-      lucroTexto.innerHTML = '66:57 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '2.290 milhões de unidades'
-    } else if (btnId === "DanceInfo") {
-      nomeDoJogo.innerHTML = 'Dance of Death'
-      DataTexto.innerHTML = '8 de setembro, 2003'
-      NumeroTexto.innerHTML = '11 músicas'
-      lucroTexto.innerHTML = '67:30 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '1.490 milhão de unidades'
-    } else if (btnId === "MatterInfo") {
-      nomeDoJogo.innerHTML = 'A Matter of Life and Death';
-      DataTexto.innerHTML = '28 de agosto, 2006'
-      NumeroTexto.innerHTML = '10 músicas'
-      lucroTexto.innerHTML = '72:08 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '1.440 milhão de unidades'
-    } else if (btnId === "FinalInfo") {
-      nomeDoJogo.innerHTML = 'The Final Frontier'
-      DataTexto.innerHTML = '13 de agosto, 2010'
-      NumeroTexto.innerHTML = '10 músicas'
-      lucroTexto.innerHTML = '76:35 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '1.120 milhão de unidades'
-    } else if (btnId === "SoulsInfo") {
-      nomeDoJogo.innerHTML = 'The Book of Souls'
-      DataTexto.innerHTML = '4 de setembro, 2015'
-      NumeroTexto.innerHTML = '11 músicas'
-      lucroTexto.innerHTML = '92:11 minutos'
-      publiTexto.innerHTML = 'Parlophone'
-      sobreTexto.innerHTML = '1.090 milhões de unidades'
-    } else if (btnId === "SenjutsuInfo") {
-      nomeDoJogo.innerHTML = 'Senjutsu'
-      DataTexto.innerHTML = '3 de setembro, 2021'
-      NumeroTexto.innerHTML = '10 músicas'
-      lucroTexto.innerHTML = '82:52 minutos'
-      publiTexto.innerHTML = 'Parlophone'
-      sobreTexto.innerHTML = '480 mil unidades'
-    }
+    } 
 
     window.scrollTo({
       top: 0,
@@ -143,7 +45,7 @@
   }
   function calcularVezes() {
 
-    fetch(`/album/calcularVezes/`, { cache: 'no-store' }).then(function (response) {
+    fetch(`/jogo/calcularVezes/`, { cache: 'no-store' }).then(function (response) {
       if (response.ok) {
         response.json().then(function (resposta) {
           console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
@@ -171,7 +73,7 @@
       });
   }
 
-  var album = ""
+  var jogo = ""
   var id = ""
   var cont = 0
 
@@ -197,7 +99,7 @@
     window.location = "pongmp.html"
   }
   function dashboard() {
-    // album = powerslave
+    // jogo = powerslave
     // cont5++
     // cont = cont5
     // id = 5
@@ -207,7 +109,7 @@
 
   function jogarJ() {
 
-    fetch("/album/atualizarVezes/", {
+    fetch("/jogo/atualizarVezes/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"

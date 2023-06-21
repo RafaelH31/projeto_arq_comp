@@ -1,12 +1,12 @@
 var playlistModel = require("../models/playlistModel");
 
-function buscarAlbum(req, res) {
+function buscarjogo(req, res) {
 
-    var albumSelecionado = req.params.albumId
+    var jogoSelecionado = req.params.jogoId
 
     console.log(`Recuperando as musicas em tempo real`);
     
-    playlistModel.buscarAlbum(albumSelecionado).then(function (resultado) {
+    playlistModel.buscarjogo(jogoSelecionado).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -105,7 +105,7 @@ function AtualizarPlaylist(req, res) {
     });
 }
 module.exports = {
-    buscarAlbum,
+    buscarjogo,
     adicionar,
     remover,
     AtualizarPlaylist

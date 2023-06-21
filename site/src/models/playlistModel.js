@@ -1,10 +1,10 @@
 var database = require("../database/config");
 
-function buscarAlbum(albumSelecionado) {
+function buscarjogo(jogoSelecionado) {
 
   instrucaoSql = `SELECT Titulo as titulo, Duração as tempo, idMusica as idMsc
   FROM musica
-  WHERE fkAlbum = ${albumSelecionado};`;
+  WHERE fkjogo = ${jogoSelecionado};`;
 
   console.log("Executando a instrução SQL: \n" + instrucaoSql);
   return database.executar(instrucaoSql);
@@ -43,7 +43,7 @@ function  AtualizarPlaylist(idUsuarioFinal) {
 }
 
 module.exports = {
-    buscarAlbum,
+    buscarjogo,
     adicionar,
     remover,
     AtualizarPlaylist
