@@ -8,11 +8,11 @@
 
   function info(btnId) {
     if (btnId === "naveInfo") {
-      nomeDoJogo.innerHTML = 'Iron Maiden'
-      DataTexto.innerHTML = '14 de abril, 1980'
-      NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '40:06 minutos'
-      publiTexto.innerHTML = 'EMI'
+      nomeDoJogo.innerHTML = 'Space Invaders'
+      DataTexto.innerHTML = 'April 1, 1978'
+      NumeroTexto.innerHTML = '5.6 million'
+      lucroTexto.innerHTML = '$13 billion in 2021-adjusted terms'
+      publiTexto.innerHTML = 'Taito'
       sobreTexto.innerHTML = '4.175 milhões de unidades'
 
     } else if (btnId === "cruzada") {
@@ -23,11 +23,11 @@
       publiTexto.innerHTML = 'EMI'
       sobreTexto.innerHTML = '4.855 milhões de unidades'
     } else if (btnId === "pongInfo") {
-      nomeDoJogo.innerHTML = 'The Number of the Beast'
-      DataTexto.innerHTML = '29 de março, 1982'
-      NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '39:14 minutos'
-      publiTexto.innerHTML = 'EMI'
+      nomeDoJogo.innerHTML = 'pong'
+      DataTexto.innerHTML = '29 November 1972'
+      NumeroTexto.innerHTML = '35 mil'
+      lucroTexto.innerHTML = '$35-40 dollars a day em 35k de maquinas'
+      publiTexto.innerHTML = 'ataro'
       sobreTexto.innerHTML = '8.330 milhões de unidades'
     } else if (btnId === "PieceInfo") {
       nomeDoJogo.innerHTML = 'Piece of Mind'
