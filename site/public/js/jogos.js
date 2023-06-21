@@ -8,12 +8,12 @@
 
   function info(btnId) {
     if (btnId === "naveInfo") {
-      nomeDoJogo.innerHTML = 'Iron Maiden'
-      DataTexto.innerHTML = '14 de abril, 1980'
-      NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '40:06 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '4.175 milhões de unidades'
+      nomeDoJogo.innerHTML = 'Space Invaders'
+      DataTexto.innerHTML = 'April 1, 1978'
+      NumeroTexto.innerHTML = '5.6 million'
+      lucroTexto.innerHTML = '$13 billion in 2021-adjusted terms'
+      publiTexto.innerHTML = 'Taito'
+      sobreTexto.innerHTML = 'Space Invaders is a classic arcade game in which the player moves a laser cannon horizontally across the bottom of the screen and fires at aliens overhead. The goal is to eliminate all of the aliens by shooting them. It was one of the earliest video games released and became one of the first coin-op video arcade games to enjoy mega-success worldwide.'
 
     } else if (btnId === "cruzada") {
       nomeDoJogo.innerHTML = 'Killers'
@@ -23,12 +23,12 @@
       publiTexto.innerHTML = 'EMI'
       sobreTexto.innerHTML = '4.855 milhões de unidades'
     } else if (btnId === "pongInfo") {
-      nomeDoJogo.innerHTML = 'The Number of the Beast'
-      DataTexto.innerHTML = '29 de março, 1982'
-      NumeroTexto.innerHTML = '8 músicas'
-      lucroTexto.innerHTML = '39:14 minutos'
-      publiTexto.innerHTML = 'EMI'
-      sobreTexto.innerHTML = '8.330 milhões de unidades'
+      nomeDoJogo.innerHTML = 'pong'
+      DataTexto.innerHTML = '29 November 1972'
+      NumeroTexto.innerHTML = '35 mil'
+      lucroTexto.innerHTML = '$35-40 dollars a day em 35k de maquinas'
+      publiTexto.innerHTML = 'ataro'
+      sobreTexto.innerHTML = 'Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. They can compete against another player controlling a second paddle on the opposing side. It was one of the first computer games ever created and was released by Atari in 1972.'
     } else if (btnId === "PieceInfo") {
       nomeDoJogo.innerHTML = 'Piece of Mind'
       DataTexto.innerHTML = '16 de maio, 1983'
