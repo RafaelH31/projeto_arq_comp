@@ -1,6 +1,22 @@
+
 @font-face {
   font-family: 'Iron Maiden';
   src: url('maiden.ttf');
+}
+
+@font-face {
+  font-family: 'Robot';
+  src: url('RobotInvaders-d9VmR.ttf');
+}
+
+@font-face {
+  font-family: 'SpaceCrusaders1';
+  src: url('SpaceCrusaders-x3DP0.ttf');
+}
+
+@font-face {
+  font-family: 'SpaceCrusaders2';
+  src: url('SpaceCrusadersItalic-ZV1Zx.ttf');
 }
 
 body {
@@ -55,9 +71,9 @@ a {
 
   padding: 15px;
   border-radius: 2px;
-  color: #FFCC00;
+  color: #7242C9;
   margin-left: 10px;
-
+  font-family: 'SpaceCrusaders1'!important;
   font-size: 15px;
 }
 
@@ -113,7 +129,7 @@ a span {
   border: 3px ridge #FFCC00;
 }
 
-.container2 {
+.container4 {
   display: flex;
   width: 80%;
   margin: auto;
