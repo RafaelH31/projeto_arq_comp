@@ -8,8 +8,8 @@ var qtdclick = 0
     var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
 
-    canvas.width = 600;
-    canvas.height = 400;
+    canvas.width = 714;
+    canvas.height = 433;
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = 'green';

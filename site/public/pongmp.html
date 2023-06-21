@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/pong.css">
   <title>Document</title>
 </head>
 <body>
-  <div>
-    <canvas id="myCanvas"></canvas>
+  <header class="header">
+    <div class="logo">
+      <span>PROJETO ARQ COMP</span>
+    </div>
+  </header>
+  <div class="container">
+    <img src="media/arcade.jpg" alt="">
+    <div class="jogo">
+      <canvas id="myCanvas"></canvas>
+      <button onclick="startgame()">Start game</button>
+    </div>
   </div>
-
-  <button onclick="startgame()">Start game</button>
-
-
   <script src="./js/pong.js"></script>
 </body>
 </html>

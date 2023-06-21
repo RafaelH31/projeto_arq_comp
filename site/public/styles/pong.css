@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Iron Maiden';
+    src: url('maiden.ttf');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #27282c;
+}
+
+.header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 2px solid #7242C9;
+    z-index: 99;
+}
+
+.logo {
+    display: inline-block;
+    color: #adff2f;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Iron Maiden'!important;
+}
+
+
+a {
+    display: inline-block;
+    position: relative;
+    background: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    /*10 px no topo e base, 30 px no lado direito e esquerdo*/
+    transition: 0.5s;
+
+    padding: 15px;
+    border-radius: 2px;
+    color: #FFCC00;
+    margin-left: 10px;
+
+    font-size: 15px;
+}
+
+a:hover {
+    letter-spacing: 0.18em;
+    /*em = tamanho adaptativo de acordo com o tamanho da tela*/
+    background: var(--anima);
+    /*"--" serve para chamar variaveis*/
+    color: var(--anima);
+    box-shadow: 0 0 35px var(--anima);
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    /*2px em todas a direções a posição do elemento*/
+    background: #27282c;
+}
+
+a span {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 86vh;
+  }
+  
+  .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .jogo{
+    position: absolute;
+    top: 40%;
+    left: 51%;
+    border-radius: 30%;
+    transform: translate(-50%, -50%);
+  }
+  #myCanvas {
+
+    border-radius: 30px;
+  }
+
+
