@@ -47,7 +47,7 @@ class SpaceShip extends GameObject {
     this.canvasHeight = canvasHeight;
     this.bulletWidth = 10;
     this.bulletHeight = 10;
-    this.bulletColor = "#ffffff";
+    this.bulletColor = "red";
     this.bullets = [];
   }
 
@@ -305,7 +305,7 @@ game.init = function() {
       game.canvas.height - 180,
       5,
       5,
-      '#ffffff',
+      '#7242C9',
       game.asteroidsParts
     ));
   }
@@ -318,7 +318,7 @@ game.init = function() {
         game.enemySpace + i * game.enemySpace,
         20,
         20,
-        '#FF0000'
+        '#adff2f'
       ));
     }
   }
