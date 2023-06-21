@@ -7,7 +7,7 @@
  
 
   function info(btnId) {
-    if (btnId === "ironInfo") {
+    if (btnId === "naveInfo") {
       nomeDoJogo.innerHTML = 'Iron Maiden'
       DataTexto.innerHTML = '14 de abril, 1980'
       NumeroTexto.innerHTML = '8 músicas'
@@ -15,14 +15,14 @@
       publiTexto.innerHTML = 'EMI'
       sobreTexto.innerHTML = '4.175 milhões de unidades'
 
-    } else if (btnId === "killersInfo") {
+    } else if (btnId === "cruzada") {
       nomeDoJogo.innerHTML = 'Killers'
       DataTexto.innerHTML = '2 de fevereiro, 1981'
       NumeroTexto.innerHTML = '10 músicas'
       lucroTexto.innerHTML = '38:49 minutos'
       publiTexto.innerHTML = 'EMI'
       sobreTexto.innerHTML = '4.855 milhões de unidades'
-    } else if (btnId === "BeastInfo") {
+    } else if (btnId === "pongInfo") {
       nomeDoJogo.innerHTML = 'The Number of the Beast'
       DataTexto.innerHTML = '29 de março, 1982'
       NumeroTexto.innerHTML = '8 músicas'
