@@ -4,28 +4,20 @@
         var nomeVar = nome_input.value;
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
-        var idadeVar = idade_input.value;
         var jogoVar = select_jogo.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
         erro_email.innerHTML = "";
         erro_senha.innerHTML = "";
-        erro_confirmar_senha.innerHTML = "";
-        erro_idade.innerHTML = "";
+        erro_confirmar_senha.innerHTML = "
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || idadeVar == "" || jogoVar == "" ) {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == ""|| jogoVar == "" ) {
             alert("Preencha os campos vazios")
 
         } else {
 
-            if (idadeVar < 12) {
-
-                erro_idade.innerHTML = 'Você deve possuir mais de 12 anos para criar uma conta'
-                input_idade.className = `inválido`
-
-            }
-
-            else if (emailVar.indexOf("@") == -1 || emailVar.endsWith(".com") == false) {
+           
+            if (emailVar.indexOf("@") == -1 || emailVar.endsWith(".com") == false) {
 
                 erro_email.innerHTML = "email inválido"
                 input_email.className = "invalido"
@@ -77,7 +69,6 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
-                idadeServer: idadeVar,
                 jogoServer: jogoVar,
             })
         })
