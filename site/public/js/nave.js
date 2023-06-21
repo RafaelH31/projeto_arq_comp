@@ -137,7 +137,7 @@ var game = {};
 game.canvas = document.getElementById('canvas');
 game.ctx = game.canvas.getContext('2d');
 
-game.backgroundColor = "grey"
+game.backgroundColor = "black"
 
 game.asteroidsParts = 4;
 game.noOfAsteroids = 10;
