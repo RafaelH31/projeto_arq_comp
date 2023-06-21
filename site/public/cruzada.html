@@ -9,140 +9,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Palavras-Cruzadas &amp; Carlos Santana</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #D7E6EB;
-            font-family: monospace;
-        }
-
-        header h1 {
-            text-align: center;
-            font-size: 30px;
-        }
-
-
-        table {
-            border: 1px #1F618D solid;
-            font-size: 25px;
-            margin-left: 130px;
-            margin: auto;
-        }
-
-
-        tr {
-            border: 1px #1F618D solid;
-        }
-
-        td {
-            border: 1px #1F618D solid;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            vertical-align: center;
-        }
-
-        button {
-            border: 0px;
-            background-color: #EC7063;
-            color: #ffffff;
-            padding: 10px;
-            font-size: 20px;
-            border-radius: 20px;
-        }
-
-        .container {
-            width: 1100px;
-            margin: auto;
-        }
-
-        #div_game {
-            background-color: #ffffff;
-            margin: auto;
-
-            width: 800px;
-            height: 800px;
-        }
-
-        #div_questions {
-            background-color: #85C1E9;
-            width: 700px;
-            margin: auto;
-        }
-
-        .button {
-            margin: auto;
-            display: inline-block;
-        }
-
-        #button_verify {
-            width: 100px;
-            margin: auto;
-        }
-
-        #input_answer {
-            width: 100px;
-            margin: auto;
-        }
-
-        .deadCell {
-            background-color: #1F618D;
-        }
-
-        .availableCell {
-            background-color: #ffffff;
-        }
-
-        footer {
-            height: 80px;
-            background-color: #2C3E50;
-            color: #ffffff;
-            font-size: 15px;
-            margin-bottom: 0;
-            padding: 0;
-            bottom: 0;
-        }
-
-        footer p {
-            text-align: center;
-
-        }
-
-        #div_information {
-            width: 500px;
-            margin: auto;
-            background-color: #85C1E9;
-            font-size: 20px;
-        }
-
-
-        #div_verifiedAnswer {
-            width: 500px;
-            height: 70px;
-            margin: auto;
-            text-align: center;
-            font-size: 20px;
-            vertical-align: center;
-            margin-bottom: 20px;
-        }
-
-        .correctAnswer {
-            background-color: #58D68D;
-            color: #196F3D;
-            border: 1px #196F3D solid;
-        }
-
-        .wrongAnswer {
-            background-color: #EC7063;
-            color: #7B241C;
-            border: 1px #7B241C solid;
-
-        }
-    </style>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            body {
+                background-color: #F1F1F1;
+                font-family: Arial, sans-serif;
+            }
+        
+            header {
+                background-color: #333;
+                color: #FFF;
+                padding: 20px;
+                text-align: center;
+            }
+        
+            header h1 {
+                font-size: 30px;
+            }
+        
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 20px auto;
+            }
+        
+            th, td {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #CCC;
+            }
+        
+            th {
+                background-color: #333;
+                color: #FFF;
+            }
+        
+            button {
+                border: none;
+                background-color: #4CAF50;
+                color: #FFF;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        
+            .container {
+                width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+        
+            #div_game {
+                background-color: #FFF;
+                margin: 0 auto;
+                width: 600px;
+                height: 600px;
+                border: 1px solid #CCC;
+                padding: 20px;
+            }
+        
+            #div_questions {
+                background-color: #EFEFEF;
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+        
+            .button {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        
+            #button_verify {
+                width: 150px;
+            }
+        
+            #input_answer {
+                width: 100px;
+            }
+        
+            .deadCell {
+                background-color: #CCC;
+            }
+        
+            .availableCell {
+                background-color: #FFF;
+            }
+        
+            footer {
+                height: 80px;
+                background-color: #333;
+                color: #FFF;
+                font-size: 15px;
+                text-align: center;
+                padding-top: 20px;
+            }
+        
+            #div_information {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 20px;
+                background-color: #EFEFEF;
+                font-size: 18px;
+                text-align: center;
+            }
+        
+            #div_verifiedAnswer {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 20px;
+                background-color: #EFEFEF;
+                font-size: 18px;
+                text-align: center;
+            }
+        
+            .correctAnswer {
+                background-color: #4CAF50;
+                color: #FFF;
+            }
+        
+            .wrongAnswer {
+                background-color: #FF0000;
+                color: #FFF;
+            }
+        </style>
 </head>
 
 
