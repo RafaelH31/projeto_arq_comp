@@ -12,7 +12,7 @@ var qtdclick = 0
     canvas.height = 433;
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = 'green';
+    ctx.fillStyle = 'white';
 
 
 
@@ -33,13 +33,13 @@ var qtdclick = 0
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = 'black';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'green';
-      ctx.fillRect(50, leftraqtY, 25, 50);
-      ctx.fillRect(525, rightraqtY, 25, 50);
+      ctx.fillStyle = 'white';
+      ctx.fillRect(50, leftraqtY, 25, 80);
+      ctx.fillRect(625, rightraqtY, 25, 80);
       ctx.fillStyle = 'white';
       ctx.font = '24px Arial';
-      ctx.fillText('pontos: ' + leftraqtpont, 50, 30);
-      ctx.fillText('pontos: ' + rightraqtpont, canvas.width - 150, 30);
+      ctx.fillText('player 1: ' + leftraqtpont, 50, 30);
+      ctx.fillText('player 2: ' + rightraqtpont, canvas.width - 150, 30);
       drawbola();
     }
     function drawbola() {
@@ -50,7 +50,7 @@ var qtdclick = 0
       }
       if (
         (bolaX < 75 && bolaY > leftraqtY && bolaY < leftraqtY + 50) ||
-        (bolaX > 525 && bolaY > rightraqtY && bolaY < rightraqtY + 50)
+        (bolaX > 625 && bolaY > rightraqtY && bolaY < rightraqtY + 50)
       ) {
         bolavelX = -bolavelX;
       }
@@ -71,7 +71,7 @@ var qtdclick = 0
         }
       }
 
-      ctx.fillStyle = 'green';
+      ctx.fillStyle = 'white';
       ctx.beginPath();
       ctx.arc(bolaX, bolaY, 10, 0, Math.PI * 2);
       ctx.fill();
@@ -90,16 +90,16 @@ var qtdclick = 0
   bolavelY = 0;
 
   if (winner == 'Right') {
-    //o post aqui
+    
     ctx.fillStyle = 'white';
-    ctx.font = '48px Arial';
-    ctx.fillText(winner + ' Player Wins!', canvas.width / 2 - 150, canvas.height / 2);
+    ctx.font = '38px Arial';
+    ctx.fillText(' Player 2 Wins!', canvas.width / 2 - 150, canvas.height / 2);
   }
   if(winner =='Left'){
-    //ou aqui
+    
     ctx.fillStyle = 'white';
-    ctx.font = '48px Arial';
-    ctx.fillText(winner + ' Player Wins!', canvas.width / 2 - 150, canvas.height / 2);
+    ctx.font = '38px Arial';
+    ctx.fillText(' Player 1 Wins!', canvas.width / 2 - 150, canvas.height / 2);
   }
 
   clearInterval(gameinter);

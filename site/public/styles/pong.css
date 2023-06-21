@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    border-bottom: 2px solid #7242C9;
+    border-bottom: 2px solid black;
     z-index: 99;
 }
 
