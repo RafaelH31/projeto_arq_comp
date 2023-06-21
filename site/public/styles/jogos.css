@@ -91,7 +91,7 @@ a span {
     border: 2px solid black; /* Borda preta de 2 pixels */
 }
 
-#tituloAlbum{
+#nomeDoJogo{
     color: red;
     font-size: 55px;
     margin-top: 20px;
@@ -109,12 +109,12 @@ a span {
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 /* 
-<h1 id="tituloAlbum"></h1><br>
+<h1 id="nomeDoJogo"></h1><br>
       <h2 id="Data-de-lancamento">Data de lançamento: <span id="DataTexo"></span></h2><br>
-      <h2 id="Numero-de-musicas">Número de músicas: <span id="NumeroTexto"></span></h2><br>
-      <h2 id="Duracao-total">Duração total: <span id="DuracaoTexto"></span></h2><br>
-      <h2 id="Gravadora">Gravadora: <span id="GravadoraTexto"></span></h2><br>
-      <h2 id="DiscosVendidos">Discos Vendidos: <span id="DiscosTexto"></span></h2> */
+      <h2 id="numerodevendas">Número de músicas: <span id="NumeroTexto"></span></h2><br>
+      <h2 id="lucro">Duração total: <span id="lucroTexto"></span></h2><br>
+      <h2 id="Gravadora">publi: <span id="publiTexto"></span></h2><br>
+      <h2 id="textors">Discos Vendidos: <span id="sobreTexto"></span></h2> */
 #voltar {
     color: red;
     display: block;
