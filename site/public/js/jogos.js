@@ -11,9 +11,9 @@
       nomeDoJogo.innerHTML = 'Space Invaders'
       DataTexto.innerHTML = 'April 1, 1978'
       NumeroTexto.innerHTML = '5.6 million'
-      lucroTexto.innerHTML = '$13 billion in 2021-adjusted terms'
+      lucroTexto.innerHTML = '$13 billion em dolares 2021'
       publiTexto.innerHTML = 'Taito'
-      sobreTexto.innerHTML = 'Space Invaders is a classic arcade game in which the player moves a laser cannon horizontally across the bottom of the screen and fires at aliens overhead. The goal is to eliminate all of the aliens by shooting them. It was one of the earliest video games released and became one of the first coin-op video arcade games to enjoy mega-success worldwide.'
+      sobreTexto.innerHTML = 'Space Invaders é um jogo de arcade clássico no qual o jogador move um canhão de laser horizontalmente na parte inferior da tela e atira em alienígenas acima. O objetivo é eliminar todos os alienígenas atirando neles. Foi um dos primeiros videogames lançados e se tornou um dos primeiros videogames de fliperama a ter grande sucesso em todo o mundo.'
 
     } else if (btnId === "cruzada") {
       nomeDoJogo.innerHTML = 'cruzada'
@@ -26,9 +26,9 @@
       nomeDoJogo.innerHTML = 'pong'
       DataTexto.innerHTML = '29 November 1972'
       NumeroTexto.innerHTML = '35 mil'
-      lucroTexto.innerHTML = '$35-40 dollars a day em 35k de maquinas'
-      publiTexto.innerHTML = 'ataro'
-      sobreTexto.innerHTML = 'Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. They can compete against another player controlling a second paddle on the opposing side. It was one of the first computer games ever created and was released by Atari in 1972.'
+      lucroTexto.innerHTML = '$35-40 dolares por dia em 35k de maquinas'
+      publiTexto.innerHTML = 'atari'
+      sobreTexto.innerHTML = 'Pong é um jogo esportivo bidimensional que simula tênis de mesa. O jogador controla uma raquete no jogo movendo-a verticalmente no lado esquerdo ou direito da tela. Eles podem competir contra outro jogador controlando uma segunda raquete no lado oposto. Foi um dos primeiros jogos de computador já criados e foi lançado pela Atari em 1972.'
     } 
 
     window.scrollTo({
