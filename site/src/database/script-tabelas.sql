@@ -1,6 +1,6 @@
 Create database projetocomp;
-USE rapazes;
-Drop database rapazes;
+USE projetocomp;
+Drop database projetocomp ;
 DROP table usuario;
 
 CREATE TABLE usuario (
@@ -28,3 +28,8 @@ insert into jogo VALUES
 (4, 0);
  INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('rafael', 'rafael.cebrian@sptech.school.com', '1234567@', '1');
  INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('enzo', 'enzo.gama@sptech.school.com', '1234567@', '2');
+ INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('cesar', 'cesar@sptech.school.com', '1234567@', '3');
+  INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('bernado', 'bernado@sptech.school.com', '1234567@', '4');
+   INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('yan', 'yan@sptech.school.com', '1234567@', '1');
+    INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('nathan', 'nathan@sptech.school.com', '1234567@', '1');
+     INSERT INTO usuario (nome, email, senha, fkjogo_Favorito) VALUES ('brudney', 'brudney@sptech.school.com', '1234567@', '3');
