@@ -9,15 +9,13 @@
 
         erro_email.innerHTML = "";
         erro_senha.innerHTML = "";
-        erro_confirmar_senha.innerHTML = "
+        erro_confirmar_senha.innerHTML = "";
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == ""|| jogoVar == "" ) {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || jogoVar == "" ) {
             alert("Preencha os campos vazios")
 
         } else {
-
-           
-            if (emailVar.indexOf("@") == -1 || emailVar.endsWith(".com") == false) {
+    if (emailVar.indexOf("@") == -1 || emailVar.endsWith(".com") == false) {
 
                 erro_email.innerHTML = "email inválido"
                 input_email.className = "invalido"
