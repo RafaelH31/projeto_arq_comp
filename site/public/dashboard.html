@@ -34,10 +34,10 @@
     </div>
     <div class="footer">
         <div class="container4">
-          <h4>Arquitetura Computacional</h4>
-          <span>Criado por Rafael Henrique e Enzo Stanganelli SP-TECH 2023</span>
+            <h4>Arquitetura Computacional</h4>
+            <span>Criado por Rafael Henrique e Enzo Stanganelli SP-TECH 2023</span>
         </div>
-      </div>
+    </div>
 </body>
 
 </html>
@@ -74,45 +74,16 @@
                                 label: 'vezes jogado',
                                 data: vetorclicks,
                                 backgroundColor: [
-                                    'rgba(181,163,59,0.8)',
-                                    'rgba(218,207,203,0.8)',
-                                    'rgba(255, 0, 0, 0.8)',
-                                    'rgba(226,218,105,0.8)',
-                                    'rgba(222,177,117,0.8)',
-                                    'rgba(143,173,207,0.8)',
-                                    'rgba(159,201,216,0.8)',
-                                    'rgba(72,60,132,0.8)',
-                                    'rgba(0,0,0,0.5)',
-                                    'rgba(144,103,132,0.8)',
-                                    'rgba(234,119,46,0.8)',
-                                    'rgba(76,66,133,0.8)',
-                                    'rgba(202,184,132,0.8)',
-                                    'rgba(79,87,74,0.8)',
-                                    'rgba(71,117,45,0.8)',
-                                    'rgba(235,235,235,0.8)',
-                                    'rgba(160,61,59,0.8)'
+                                    'rgba(114, 66, 201, 0.8)',
+                                    'rgba(173, 255, 47, 0.8)',
+                                    'rgba(70, 157, 235, 0.8)',
 
                                 ],
                                 borderWidth: 4,
                                 borderColor: [
-                                    'rgba(181,163,59,255)',
-                                    'rgba(218,207,203,255)',
-                                    'rgba(255, 0, 0, 1)',
-                                    'rgba(226,218,105,255)',
-                                    'rgba(222,177,117,255)',
-                                    'rgba(143,173,207,255)',
-                                    'rgba(159,201,216,255)',
-                                    'rgba(72,60,132,255)',
-                                    'rgba(0,0,0,255)',
-                                    'rgba(144,103,132,255)',
-                                    'rgba(234,119,46,255)',
-                                    'rgba(76,66,133,255)',
-                                    'rgba(202,184,132,255)',
-                                    'rgba(79,87,74,255)',
-                                    'rgba(71,117,45,255)',
-                                    'rgba(235,235,235,255)',
-                                    'rgba(160,61,59,255)',
-
+                                    'rgba(114, 66, 201, 255)',
+                                    'rgba(173, 255, 47, 255)',
+                                    'rgba(70, 157, 235, 255)',
                                 ]
                             }]
                         },
@@ -160,7 +131,7 @@
                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
     }
-function calcularFavoritos() {
+    function calcularFavoritos() {
 
         fetch(`/jogo/calcularFavoritos/`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
@@ -176,50 +147,21 @@ function calcularFavoritos() {
                     new Chart(ctx3, {
                         type: 'bar',
                         data: {
-                            labels: ['pong', 'space invaders', 'top gear','tetris' ],
+                            labels: ['pong', 'space invaders', 'top gear', 'tetris'],
                             datasets: [{
                                 label: 'vezes escolhido',
                                 data: vetorFavoritos,
                                 backgroundColor: [
-                                    'rgba(181,163,59,0.8)',
-                                    'rgba(218,207,203,0.8)',
-                                    'rgba(255, 0, 0, 0.8)',
-                                    'rgba(226,218,105,0.8)',
-                                    'rgba(222,177,117,0.8)',
-                                    'rgba(143,173,207,0.8)',
-                                    'rgba(159,201,216,0.8)',
-                                    'rgba(72,60,132,0.8)',
-                                    'rgba(0,0,0,0.5)',
-                                    'rgba(144,103,132,0.8)',
-                                    'rgba(234,119,46,0.8)',
-                                    'rgba(76,66,133,0.8)',
-                                    'rgba(202,184,132,0.8)',
-                                    'rgba(79,87,74,0.8)',
-                                    'rgba(71,117,45,0.8)',
-                                    'rgba(235,235,235,0.8)',
-                                    'rgba(160,61,59,0.8)'
+                                    'rgba(114, 66, 201, 0.8)',
+                                    'rgba(173, 255, 47, 0.8)',
+                                    'rgba(70, 157, 235, 0.8)',
 
                                 ],
                                 borderWidth: 4,
                                 borderColor: [
-                                    'rgba(181,163,59,255)',
-                                    'rgba(218,207,203,255)',
-                                    'rgba(255, 0, 0, 1)',
-                                    'rgba(226,218,105,255)',
-                                    'rgba(222,177,117,255)',
-                                    'rgba(143,173,207,255)',
-                                    'rgba(159,201,216,255)',
-                                    'rgba(72,60,132,255)',
-                                    'rgba(0,0,0,255)',
-                                    'rgba(144,103,132,255)',
-                                    'rgba(234,119,46,255)',
-                                    'rgba(76,66,133,255)',
-                                    'rgba(202,184,132,255)',
-                                    'rgba(79,87,74,255)',
-                                    'rgba(71,117,45,255)',
-                                    'rgba(235,235,235,255)',
-                                    'rgba(160,61,59,255)',
-
+                                    'rgba(114, 66, 201, 255)',
+                                    'rgba(173, 255, 47, 255)',
+                                    'rgba(70, 157, 235, 255)',
                                 ]
                             }]
                         },

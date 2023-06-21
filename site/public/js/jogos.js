@@ -16,14 +16,14 @@
       sobreTexto.innerHTML = 'Space Invaders é um jogo de arcade clássico no qual o jogador move um canhão de laser horizontalmente na parte inferior da tela e atira em alienígenas acima. O objetivo é eliminar todos os alienígenas atirando neles. Foi um dos primeiros videogames lançados e se tornou um dos primeiros videogames de fliperama a ter grande sucesso em todo o mundo.'
 
     } else if (btnId === "cruzada") {
-      nomeDoJogo.innerHTML = 'cruzada'
+      nomeDoJogo.innerHTML = 'Cruzadinha'
       DataTexto.innerHTML = '??'
       NumeroTexto.innerHTML = '??'
       lucroTexto.innerHTML = '??'
       publiTexto.innerHTML = '??'
       sobreTexto.innerHTML = 'O jogo de palavras cruzadas é um passatempo bastante difundido. Consiste de várias linhas formadas por quadrados em branco, algumas na vertical e outras na horizontal, que se cruzam umas com as outras.'
     } else if (btnId === "pongInfo") {
-      nomeDoJogo.innerHTML = 'pong'
+      nomeDoJogo.innerHTML = 'Pong'
       DataTexto.innerHTML = '29 November 1972'
       NumeroTexto.innerHTML = '35 mil'
       lucroTexto.innerHTML = '$35-40 dolares por dia em 35k de maquinas'
