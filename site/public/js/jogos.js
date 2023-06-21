@@ -29,8 +29,29 @@
       lucroTexto.innerHTML = '$35-40 dolares por dia em 35k de maquinas'
       publiTexto.innerHTML = 'atari'
       sobreTexto.innerHTML = 'Pong é um jogo esportivo bidimensional que simula tênis de mesa. O jogador controla uma raquete no jogo movendo-a verticalmente no lado esquerdo ou direito da tela. Eles podem competir contra outro jogador controlando uma segunda raquete no lado oposto. Foi um dos primeiros jogos de computador já criados e foi lançado pela Atari em 1972.'
-    } 
-
+    } else if(btnId === "riverInfo" ){
+      nomeDoJogo.innerHTML = 'River Raid'
+DataTexto.innerHTML = '1982'
+NumeroTexto.innerHTML = '1 million'
+lucroTexto.innerHTML = 'N/A'
+publiTexto.innerHTML = 'Activision'
+sobreTexto.innerHTML = 'River Raid é um jogo de tiro de rolagem vertical lançado em 1982 pela Activision para o Atari 2600. O objetivo do jogo é pilotar um avião de combate sobre um rio enquanto destrói pontes, navios e helicópteros inimigos.'
+    }else if(btnId === "endurInfo"){
+      nomeDoJogo.innerHTML = 'Enduro'
+DataTexto.innerHTML = '1983'
+NumeroTexto.innerHTML = '750k'
+lucroTexto.innerHTML = 'N/A'
+publiTexto.innerHTML = 'Activision'
+sobreTexto.innerHTML = 'Enduro é um jogo de corrida lançado em 1983 pela Activision para o Atari 2600. O objetivo do jogo é ultrapassar um certo número de carros em um dia para avançar para o próximo dia de corrida.'
+    }
+    else if(btnId === "doomInfo"){
+      nomeDoJogo.innerHTML = 'Doom'
+DataTexto.innerHTML = '1993'
+NumeroTexto.innerHTML = '4.65 million'
+lucroTexto.innerHTML = 'US$8.74 million'
+publiTexto.innerHTML = 'id Software'
+sobreTexto.innerHTML = 'Doom é um jogo de tiro em primeira pessoa (FPS) de 1993 desenvolvido pela id Software para MS-DOS. Os jogadores assumem o papel de um fuzileiro naval espacial, popularmente conhecido como Doom guy, lutando contra hordas de demônios invasores do inferno.'
+    }
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
