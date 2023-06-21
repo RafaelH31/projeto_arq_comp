@@ -27,7 +27,7 @@ body {
 
 .logo {
   display: inline-block;
-  color: red;
+  color: greenyellow;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 50px;
   font-weight: bold;
@@ -98,7 +98,7 @@ a span {
   margin-top: 10px;
   width: 700px;
   height: 350px;
-  border: 3px ridge #FFCC00;
+  border: 2px ridge greenyellow;
 }
 .chart-containerBola {
   margin: 10px;
