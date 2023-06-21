@@ -1,10 +1,10 @@
-var albumModel = require("../models/albumModel");
+var jogoModel = require("../models/jogoModel");
 
 function calcularVezes(req, res) {
 
     console.log(`Recuperando quantidade de vezes em tempo real`);
 
-    albumModel.calcularVezes().then(function (resultado) {
+    jogoModel.calcularVezes().then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -21,7 +21,7 @@ function calcularFavoritos(req, res) {
 
     console.log(`Recuperando quantidade de favoritos em tempo real`);
 
-    albumModel.calcularFavoritos().then(function (resultado) {
+    jogoModel.calcularFavoritos().then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -38,16 +38,16 @@ function calcularFavoritos(req, res) {
 function atualizarVezes(req, res) {
 
     var cont = req.body.contServer;
-    var idAlbum = req.body.idServer
+    var idjogo = req.body.idServer
 
     if (cont == undefined) {
         res.status(400).send("Seu cont está undefined!");
     }
-    else if (idAlbum == undefined) {
-        res.status(400).send("Seu idAlbum está undefined!");
+    else if (idjogo == undefined) {
+        res.status(400).send("Seu idjogo está undefined!");
     } else {
 
-        albumModel.atualizarVezes(cont, idAlbum)
+        jogoModel.atualizarVezes(cont, idjogo)
 
             .then(
                 function (resultado) {

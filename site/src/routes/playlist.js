@@ -3,8 +3,8 @@ var router = express.Router();
 
 var playlistController = require("../controllers/playlistController");
 
-router.get("/buscarAlbum/:albumId", function (req, res) {
-    playlistController.buscarAlbum(req, res);
+router.get("/buscarjogo/:jogoId", function (req, res) {
+    playlistController.buscarjogo(req, res);
 })
 
 router.post("/adicionar", function (req, res) {

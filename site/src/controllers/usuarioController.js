@@ -66,7 +66,7 @@ function cadastrar(req, res) {
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
     var idade = req.body.idadeServer;
-    var album = req.body.albumServer;
+    var jogo = req.body.jogoServer;
     // Faça as validações dos valores
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
@@ -74,14 +74,14 @@ function cadastrar(req, res) {
         res.status(400).send("Seu email está undefined!");
     } else if (idade == undefined) {
         res.status(400).send("Sua idade está undefined!");
-    } else if (album == undefined) {
-        res.status(400).send("Seu album está undefined!");
+    } else if (jogo == undefined) {
+        res.status(400).send("Seu jogo está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
     } else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nome, email, senha, idade, album)
+        usuarioModel.cadastrar(nome, email, senha, idade, jogo)
             .then(
                 function (resultado) {
                     res.json(resultado);

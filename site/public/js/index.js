@@ -28,7 +28,7 @@
     }
   }
   function atualizarInfos(){
-  if (select_album.value == 1) {
+  if (select_jogo.value == 1) {
   nome.innerHTML = 'Bruce Dickinson'
   dtE.innerHTML = "Data de Entrada: 1 de setembro 1981"
   dtS.innerHTML = ""
@@ -37,7 +37,7 @@
   funcao.innerHTML = "Função: Vocalista"
   foto.src = "img/BruceDick.jpeg"
 }
-if (select_album.value == 2) {
+if (select_jogo.value == 2) {
   nome.innerHTML = "Paul Di'Anno"
   dtE.innerHTML = "Data de Entrada: 1 de janeiro 1978"
   dtS.innerHTML = "Data de Saída: 31 de agosto 1981"
@@ -46,7 +46,7 @@ if (select_album.value == 2) {
   funcao.innerHTML = "Função: Vocalista"
   foto.src = "img/paulDino.jpg"
 }
-if (select_album.value == 3) {
+if (select_jogo.value == 3) {
   nome.innerHTML = "Blaze Bayley"
   dtE.innerHTML = "Data de Entrada: 1 de março 1994"
   dtS.innerHTML = "Data de Saída: 28 de fevereiro 1999"
@@ -55,7 +55,7 @@ if (select_album.value == 3) {
   funcao.innerHTML = "Função: Vocalista"
   foto.src = "img/Blaze.jpg"
 }
-if (select_album.value == 4) {
+if (select_jogo.value == 4) {
   nome.innerHTML = "Steve Harris"
   dtE.innerHTML = "Data de Entrada: 25 de dezembro 1975"
   dtS.innerHTML = ""
@@ -64,7 +64,7 @@ if (select_album.value == 4) {
   funcao.innerHTML = "Função: Baixista"
   foto.src = "img/steve.jpg"
 }
-if (select_album.value == 5) {
+if (select_jogo.value == 5) {
   nome.innerHTML = "Dave Murray"
   dtE.innerHTML = "Data de Entrada: 1 de janeiro 1976"
   dtS.innerHTML = ""
@@ -73,7 +73,7 @@ if (select_album.value == 5) {
   funcao.innerHTML = "Função: Guitarrista"
   foto.src = "img/dave.jpg"
 }
-if (select_album.value == 6) {
+if (select_jogo.value == 6) {
   nome.innerHTML = "Adrian Smith"
   dtE.innerHTML = "Data de Entrada: 1 de outubro 1980"
   dtS.innerHTML = "Data de Saída: 28 de fevereiro 1990"
@@ -82,7 +82,7 @@ if (select_album.value == 6) {
   funcao.innerHTML = "Função: Guitarrista"
   foto.src = "img/adrian.jpg"
 }
-if (select_album.value == 7) {
+if (select_jogo.value == 7) {
   nome.innerHTML = "Janick Gers"
   dtE.innerHTML = "Data de Entrada: 1 de janeiro 1990"
   dtS.innerHTML = ""
@@ -91,7 +91,7 @@ if (select_album.value == 7) {
   funcao.innerHTML = "Função: Guitarrista"
   foto.src = "img/janick.jpg"
 }
-if (select_album.value == 8) {
+if (select_jogo.value == 8) {
   nome.innerHTML = "Dennis Stratton"
   dtE.innerHTML = "Data de Entrada: 1 de março 1979"
   dtS.innerHTML = "Data de Saída: 30 de setembro 1980"
@@ -100,7 +100,7 @@ if (select_album.value == 8) {
   funcao.innerHTML = "Função: Guitarrista"
   foto.src = "img/dennis.jpg"
 }
-if (select_album.value == 9) {
+if (select_jogo.value == 9) {
   nome.innerHTML = "Clive Burr"
   dtE.innerHTML = "Data de Entrada: 1 de janeiro 1979"
   dtS.innerHTML = "Data de Saída: 31 de dezembro 1982"
@@ -109,7 +109,7 @@ if (select_album.value == 9) {
   funcao.innerHTML = "Função: Baterista"
   foto.src = "img/clive.jpeg"
 }
-if (select_album.value == 10) {
+if (select_jogo.value == 10) {
   nome.innerHTML = "Nicko McBrain"
   dtE.innerHTML = "Data de Entrada: 1 de setembro 1982"
   dtS.innerHTML = ""

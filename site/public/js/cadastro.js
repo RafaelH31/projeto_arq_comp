@@ -5,7 +5,7 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var idadeVar = idade_input.value;
-        var albumVar = select_album.value;
+        var jogoVar = select_jogo.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
         erro_email.innerHTML = "";
@@ -13,7 +13,7 @@
         erro_confirmar_senha.innerHTML = "";
         erro_idade.innerHTML = "";
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || idadeVar == "" || albumVar == "" ) {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || idadeVar == "" || jogoVar == "" ) {
             alert("Preencha os campos vazios")
 
         } else {
@@ -78,7 +78,7 @@
                 emailServer: emailVar,
                 senhaServer: senhaVar,
                 idadeServer: idadeVar,
-                albumServer: albumVar,
+                jogoServer: jogoVar,
             })
         })
 

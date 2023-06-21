@@ -54,7 +54,7 @@
 
     function calcularVezes() {
 
-        fetch(`/album/calcularVezes/`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/jogo/calcularVezes/`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
@@ -162,7 +162,7 @@
     }
 function calcularFavoritos() {
 
-        fetch(`/album/calcularFavoritos/`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/jogo/calcularFavoritos/`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
