@@ -34,8 +34,8 @@ body {
 
 .logo {
     display: inline-block;
-    color: #adff2f;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #7242C9;
+    text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
     font-size: 70px;
     font-weight: bold;
     font-family: 'SpaceCrusaders2'!important;

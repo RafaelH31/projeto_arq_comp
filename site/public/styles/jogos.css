@@ -93,7 +93,7 @@ a span {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 730px;
-    height: 400px;
+    height: 550px;
     padding-top: 0px;
     padding-bottom: 0px;
     border-top: 2px solid black;
@@ -104,20 +104,21 @@ a span {
 }
 
 #nomeDoJogo{
-    color: red;
+    color: #7242C9;
     font-size: 55px;
+    font-family: 'SpaceCrusaders2'!important;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
     text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
 }
 #containerAlerta h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'SpaceCrusaders1'!important;
     font-size: 20px;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
-    color: #FFCC00;
+    color: #adff2f;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 /* 
@@ -128,7 +129,7 @@ a span {
       <h2 id="Gravadora">publi: <span id="publiTexto"></span></h2><br>
       <h2 id="textors">Discos Vendidos: <span id="sobreTexto"></span></h2> */
 #voltar {
-    color: red;
+    color: #469DEB;
     display: block;
     width: 100px;
     height: 40px;
@@ -138,7 +139,7 @@ a span {
     border: 2px solid black;
     border-radius: 5%;
     text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'SpaceCrusaders2'!important;
 }
 
 #voltar:hover {
