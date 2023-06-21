@@ -1,4 +1,4 @@
-Create database rapazes;
+Create database projetocomp;
 USE rapazes;
 Drop database rapazes;
 DROP table usuario;
